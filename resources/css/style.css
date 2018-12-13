@@ -188,7 +188,7 @@ a:active {
 
 /* clients */
 
-.slideshow-container {
+.clients-container {
   background-color: hsla(149, 42%, 94%);
   display: flex;
   flex-wrap: wrap;
@@ -214,7 +214,7 @@ h4 {
   order: 2;
 }*/
 
-.slideshow-container::after {
+.clients-container::after {
   content: '';
   width: 100%;
 }
@@ -240,14 +240,17 @@ h4 {
   margin: 5px 5px 75px 5px;
 }
 
-.slideshow-container img {
+.clients-container img {
   display: inline-block;
-  background-color: hsla(355, 100%, 97%); /* light green */
   border: 3px solid hsl(356, 97%, 29%);
   border-radius: 10px;
   /*margin-left: 5px;
   margin-right: 5px;*/
   /*padding: 5px;*/
+}
+
+.clients-container img:hover {
+  
 }
 
 /* Footer */
