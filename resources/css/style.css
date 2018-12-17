@@ -14,7 +14,7 @@ header {
   /*align-items: center;*/
   border-bottom: 5px solid hsl(356, 97%, 29%);
   /*height: 100px;*/
-  color: #e6e6e6;
+  color: hsl(134, 97%, 14%);
   width: 100%;
   z-index: 100;
   background-color: hsla(355, 100%, 97%);
@@ -49,7 +49,7 @@ nav a {
     vertical-align: bottom;
     line-height: 1.6;
     font-size: 1rem;
-    color: #1A4425;
+    color: hsl(134, 97%, 14%);
     font-weight: bold;
     text-decoration: none;
     justify-content: space-between;
@@ -63,15 +63,43 @@ nav a:link {
 
 /* mouse over link */
 
-nav a:hover {
+nav a:hover,
+nav a:active {
   color: hsl(356, 97%, 29%);
-  font-size: 105%;
+  letter-spacing: 2px;
 }
+
+nav a:after,
+nav a:before {
+  backface-visibility: hidden;
+  border: 1px solid hsl(356, 97%, 29%);
+  bottom: 0px;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+nav a:hover:after,
+nav a:hover:before {
+  backface-visibility: hidden;
+  border-color: hsl(356, 97%, 29%);
+  transition: 350ms ease-in-out;
+  width: 90%;
+}
+
+nav a:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 90%;
+}
+
 
 /* selected link */
 a:active {
-  color: hsl(356, 97%, 29%);
-  font-size: 105%;
+  /*color: hsl(356, 97%, 29%);*/
 }
 
 /* banner */
@@ -139,9 +167,10 @@ a:active {
 .services {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: hsla(149, 42%, 94%);
-  /*height: 350px;*/
   margin-top: 100px;
+  height: 420px;
   }
 
 .box {
@@ -177,14 +206,16 @@ a:active {
 .awards {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: hsla(355, 100%, 97%);
-  /*margin: 75px 40px;*/
+  height: 420px;
 }
 
 .awards img {
-  margin: 75px 40px;
+  display: flex;
   border-radius: 10px;
   border: 3px solid hsl(134, 97%, 14%);
+  margin: 40px;
 }
 
 /* clients */
@@ -194,6 +225,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 420px;
 }
 
 .four {
@@ -228,7 +260,7 @@ h4 {
   display: flex;
   background-color: hsla(149, 42%, 94%);
   height: 100px;
-  width: 161px;
+  width: 160px;
   /*margin: 75px 5px;*/
   padding: 15px;
 }
