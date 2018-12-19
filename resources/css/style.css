@@ -7,6 +7,20 @@ html {
   font-size: 16px;
 }
 
+/* background gradients */
+
+.gradient {
+  background-image: linear-gradient(
+    hsla(355, 100%, 97%),
+    hsla(355, 100%, 97%) 20%,
+    hsla(149, 42%, 94%) 30%,
+    hsla(149, 42%, 94%) 45%,
+    hsla(355, 100%, 97%) 55%,
+    hsla(355, 100%, 97%) 70%,
+    hsla(149, 42%, 94%) 80%
+  );
+}
+
 /* Header  */
 
 header {
@@ -168,7 +182,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsla(149, 42%, 94%);
+  /*background-color: hsla(149, 42%, 94%);*/
   margin-top: 100px;
   height: 420px;
   }
@@ -207,7 +221,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsla(355, 100%, 97%);
+  /*background-color: hsla(355, 100%, 97%);*/
   height: 420px;
 }
 
@@ -221,7 +235,7 @@ a:active {
 /* clients */
 
 .clients-container {
-  background-color: hsla(149, 42%, 94%);
+  /*background-color: hsla(149, 42%, 94%);*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -258,7 +272,6 @@ h4 {
 
 .rectangle {
   display: flex;
-  background-color: hsla(149, 42%, 94%);
   height: 100px;
   width: 160px;
   /*margin: 75px 5px;*/
